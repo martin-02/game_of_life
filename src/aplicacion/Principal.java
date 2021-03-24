@@ -10,25 +10,25 @@ public class Principal {
 
             Tablero tablero = new Tablero();
             System.out.println("SIMULACION CON TABLERO LEIDO");
-            tablero.leerEstadoActual(); //ERROR!!
+            Tablero.leerEstadoActual(); //ERROR!!
             System.out.println(tablero);
 
             for(int i = 0; i <= 5; i++) {
 
                 TimeUnit.SECONDS.sleep(1);
-                tablero.transitarAlEstadoSiguiente();
+                Tablero.transitarAlEstadoSiguiente();
                 System.out.println(tablero);
             }
 
             System.out.println("SIMULACIÓN CON TABLERO GENERADO MEDIANTE MONTECARLO");
             
-            tablero.generarEstadoActualPorMontecarlo();
+            Tablero.generarEstadoActualPorMontecarlo();
             System.out.println(tablero);
 
             for(int i = 0; i <= 15; i++) {
 
                 TimeUnit.SECONDS.sleep(1);
-                tablero.transitarAlEstadoSiguiente();
+                Tablero.transitarAlEstadoSiguiente();
                 System.out.println(tablero);
             }
         }

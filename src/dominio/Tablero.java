@@ -17,6 +17,9 @@ public class Tablero {
 
     /********************************************************
     * Lee el estado inicial de un fichero llamado ‘matriz‘.
+    *
+    * complejidad espacial: variable
+    * complejidad temporal: O(n^2)
     ********************************************************/
     public void leerEstadoActual(){
 
@@ -34,7 +37,7 @@ public class Tablero {
             }
 
             for (int i = 1; i < DIMENSION + 1; i++) {
-                
+
                 for (int j = 1; j < DIMENSION + 1; j++) {
                     int vecinasVivas = estadoActual [i - 1][j - 1] + estadoActual [i - 1][j] + estadoActual [i - 1][j + 1] + estadoActual [i][j - 1] + estadoActual [i][j + 1]
                     + estadoActual [i + 1][j - 1] + estadoActual [i + 1][j] + estadoActual [i + 1][j + 1];
@@ -65,6 +68,9 @@ public class Tablero {
     * genera un número aleatorio en el intervalo [0, 1). Si
     * el número es menor que 0,5, entonces la celda está
     * inicialmente viva. En caso contrario, está muerta.
+    *
+    * complejidad espacial: variable
+    * complejidad temporal: O(n^2)
     *******************************************************/
     public void generarEstadoActualPorMontecarlo(){
 
@@ -102,6 +108,9 @@ public class Tablero {
     /********************************************************
     * Transita al estado siguiente según las reglas del
     * juego de la vida.
+
+    * complejidad espacial: variable
+    * complejidad temporal: O(n^2)
     ********************************************************/
     public void transitarAlEstadoSiguiente(){
 
@@ -134,6 +143,9 @@ public class Tablero {
     /*******************************************************
     * Devuelve, en modo texto, el estado actual.
     * @return el estado actual.
+
+    * complejidad espacial: variable
+    * complejidad temporal: O(n^2)
     *******************************************************/
 
     @Override

@@ -19,7 +19,9 @@ public class Tablero {
     public void leerEstadoActual(){
 
         try {
-            Scanner fichero = new Scanner(new File("matriz"));
+            FileReader ficheroLeer = new FileReader("matriz");
+            Scanner fichero = new Scanner(ficheroLeer);
+            
             for (int i = 0; i < DIMENSION; i++) {
 
                 String linea = fichero.nextLine();

@@ -7,8 +7,9 @@
     El juego de la vida es un conjunto de reglas por las cuales se da paso a una serie de comportamientos muy complejos, en otras palabras, es un modelo matemático que cambia paso a paso.
     Para esto hemos creado una matriz de 30x30, con bordes a los lados. Definiendo las celdas vivas iniciales, podemos proceder a iniciar el juego.
 
-![Conway.gif](Conway.gif)
-<img align="right" width="100" height="100" src="Conway.gif">
+<p align="center">
+  <img width="460" height="300" src="Conway.gif">
+</p>
 
 # Creador:
     Martin Berlanas Molera

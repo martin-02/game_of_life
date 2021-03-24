@@ -1,5 +1,7 @@
 package dominio;
 
+import java.util.Scanner;
+
 /**
 * Esta clase es responsable de leer el tablero de un
 * fichero en forma de ceros y unos, ir transitando de

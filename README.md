@@ -14,6 +14,6 @@
 # Funcionalidad:
     Los siguientes comandos se introducen en la consola de comandos para poder ejecutarlos:
         Modificamos la matriz dentro de los archivos para crear el patrón que el usuario desee.
-        
+
         make ejecutar: Para poder ejecutar el juego con la matriz introducida.
     

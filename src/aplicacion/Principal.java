@@ -1,3 +1,5 @@
+package aplicacion;
+
 import dominio.Tablero;
 import java.util.concurrent.TimeUnit;
 import java.lang.InterruptedException;
